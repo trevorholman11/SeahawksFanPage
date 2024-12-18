@@ -1,0 +1,208 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    position: relative;
+    top: 400px;
+    background-image: url('https://static.clubs.nfl.com/image/upload/v1695238738/seahawks/qbajuflkkhjo0orjtlse.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    color: #1F3C88; /* Light navy blue */
+    background-color: #A5ACAF; /* Original Seahawks gray */
+    display: flex; /* Flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Center-align text */
+}
+
+
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 34, 68, 0.8); /* Navy Blue with transparency */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    display: inline-block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    
+}
+
+nav, main, footer {
+    width: 90%; /* Adjust width for consistency */
+    max-width: 800px; /* Prevent items from stretching too wide */
+    margin-bottom: 20px; /* Add spacing between each section */
+}
+
+h1 {
+    color: #69BE28; /* Wolf Grey */
+    font-size: 3em; /* Increased font size */
+    font-family: 'Bebas Neue', cursive; /* Custom font */
+    font-weight: uppercase;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for depth */
+}
+
+/* Navigation Styles */
+/* Navigation Styles */
+nav {
+    background-color: #002244; /* Dark Navy background */
+    padding: 10px 20px; /* Spacing for nav bar */
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Vertically center the items */
+    position: fixed; /* Fix it to the top */
+    width: 100%;
+    z-index: 10; /* Ensure it's above other content */
+}
+
+nav .logo {
+    font-family: 'Bangers', cursive; /* Fun, sporty font for the logo */
+    color: #69BE28; /* Seahawks Green */
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none; /* Remove default list styles */
+    display: flex; /* Inline display of items */
+    gap: 30px; /* Spacing between menu items */
+    margin: 0;
+}
+
+nav ul li {
+    font-family: 'Roboto', sans-serif; /* Clean, modern font for menu items */
+    font-size: 1.1rem;
+}
+
+nav ul li a {
+    color: #A5ACAF; /* Light grey for text */
+    text-decoration: none; /* Remove underlines */
+    text-transform: uppercase; /* Uppercase letters for style */
+    font-weight: 600; /* Bold font for menu items */
+    padding: 10px 15px; /* Spacing around the text */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    border-radius: 5px; /* Slight rounding of menu item */
+}
+
+nav ul li a:hover {
+    background-color: #69BE28; /* Highlight with Seahawks Green */
+    color: #002244; /* Dark Navy text color on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+nav ul li a.active {
+    color: #002244; /* Highlight active link */
+    font-weight: bold; /* Make active item stand out */
+}
+
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* White background with transparency */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+h2 {
+    color: #69BE28; /* Navy Blue */
+    font-size: 2.5em; /* Increased font size */
+    margin-bottom: 15px;
+}
+
+p, li {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    max-width: 600px; /* Prevent text from stretching too wide */
+    margin: 0 auto; /* Center paragraph block */
+    color: #1F3C88; /* Light navy blue for paragraph */
+    font-family: 'Exo 2', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Image Styles */
+img {
+    width: 100%;
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(0, 34, 68, 0.8); /* Navy Blue with transparency */
+    color: #A5ACAF; /* Wolf Grey */
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Button Styles */
+button {
+    background-color: #78B9B7; /* Action Green */
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #66AFAF; /* Darker Action Green */
+}
+
+/* List Styles */
+ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    display: flex; /* Display list items inline */
+    justify-content: center; /* Center the list items */
+}
+
+li {
+    margin: 10px; /* Space between list items */
+    background-color: rgba(0, 76, 84, 0.7); /* Background color for list items */
+    padding: 10px 15px; /* Padding for list items */
+    border-radius: 5px; /* Rounded corners for list items */
+    color: #A5ACAF; /* Wolf Grey */
+}
+
+.text-box {
+    background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+    padding: 20px; /* Spacing inside the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    max-width: 600px; /* Prevent the box from becoming too wide */
+    margin: 20px auto; /* Center the box with margin */
+    text-align: center; /* Center-align the text inside */
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    nav a {
+        font-size: 1.2em;
+    }
+}
+  
